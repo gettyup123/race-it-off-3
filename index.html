@@ -174,12 +174,7 @@
           trafficConeInterval = setInterval(createTrafficCone, 3000);
           moveInterval = setInterval(moveObstacles, 30);
         }
-      } else if (event.key === '1') {
-        isInvincible = true;
-      } else if (event.key === '3') {
-        isInvincible = false;
-      }
-    });
+      
  
     document.addEventListener('keyup', (event) => {
       if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
