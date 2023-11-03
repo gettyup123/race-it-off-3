@@ -263,7 +263,13 @@
       gameOverText.textContent = 'Game Over\nScore: ' + score;
       gameOverOverlay.style.display = 'flex';
     }
- 
+   } else if (event.key === 'A') {
+        isInvincible = true;
+      } else if (event.key === 'F') {
+        isInvincible = false;
+      }
+    });
+
     let obstacleInterval = setInterval(createObstacle, 1000);
     let trafficConeInterval = setInterval(createTrafficCone, 3000);
     let moveInterval = setInterval(moveObstacles, 30);
