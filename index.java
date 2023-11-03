@@ -4,3 +4,9 @@ document.addEventListener('touchmove', (event) => {
   carPosition = Math.max(0, Math.min(container.clientWidth - car.clientWidth, carPosition));
   car.style.left = carPosition + 'px';
 });
+  } else if (event.key === 'A') {
+        isInvincible = true;
+      } else if (event.key === 'F') {
+        isInvincible = false;
+      }
+    });
